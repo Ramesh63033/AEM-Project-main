@@ -1,0 +1,26 @@
+<h1>This is the HTL Template Language</h1>
+
+<div data-sly-test="${properties.box}">
+   <div>${properties.name}</div>
+
+</div>
+
+<h1>These are the movie names</h1>
+<div data-sly-list.Arjuna="${properties.arjuna}">
+    <li>${Arjuna}</li>
+
+</div>
+
+<h1>These are the subjects</h1>
+
+<div data-sly-repeat.Pavan="${properties.ram}">
+
+   <li>${Pavan}</li>
+
+</div>
+
+<h1>This is the HTL Template Language</h1>
+
+<div data-sly-resource="${'Venkatamma' @resourceType='Demo/components/Venkatamma'}"></div>
+
+

@@ -56,11 +56,15 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                     fieldLabel="Y"/>
+            </multifield>
+            <multfield1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
                 <field1
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
-                    fieldLabel="b"/>
-            </multifield>
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Y"/>
+            </multfield1>
         </items>
     </content>
 </jcr:root>

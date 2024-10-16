@@ -40,7 +40,7 @@ public class Gloabal {
       resource =resolver.getResource(path);
       page = resource.adaptTo(Page.class);
    }
-   public List getChildPages(){
+   public List<String> getChildPages(){
        List<String> list=new ArrayList<String>();
        Iterator<Page> itr=page.listChildren();
        while(itr.hasNext()){

@@ -46,7 +46,7 @@ public class Apple {
 
            
        }
-       public List getChildPages(){
+       public List<String> getChildPages(){
              List<String> list=new ArrayList<>();
              Iterator<Page> itr=page.listChildren();
              while (itr.hasNext()) {

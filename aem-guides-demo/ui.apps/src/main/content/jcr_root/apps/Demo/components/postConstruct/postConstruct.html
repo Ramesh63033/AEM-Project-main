@@ -1,0 +1,9 @@
+<h1>This is the PostConstruct</h1>
+<sly data-sly-use.model="com.adobe.aem.guides.demo.core.models.Post"></sly>
+ // data-sly-use.model: which is an HTL directives, and which is used to import the java class into your templte 
+ //"com.adobe.aem.guides.demo.core.models.Post" : which is mostly used to represent the package name and class name 
+<div>${mode.text}</div>
+<sly data-sly-list="${model.ramesh}">
+
+        <li>${item}</li>
+</sly>

@@ -1,0 +1,27 @@
+<h1>This is the HTL Template language</h1>
+<div data-sly-use.model="com.adobe.aem.guides.demo.core.models.Kalyan"></div>
+<div>Product Name:${properties.name}</div>
+
+<div>Product Lunched Date:${'dd-mm-yyyy' @format=properties.date}</div>
+<div>Product Rating:${properties.num}</div>
+
+
+
+<div data-sly-test="${properties.check}">
+      <div>${properties.img}</div>
+</div>
+
+<h1>These are the movie names </h1>
+<div data-sly-list.ramesh="${properties.mul}">
+
+    <li>${ramesh}</li>
+
+</div>
+<h1>these are the favourite places</h1>
+<div data-sly-repeat.arjuna="${properties.mul1}">
+
+  <li>${arjuna}</li>
+
+</div>
+<h1>this is the data-sly-resource</h1>
+<div data-sly-resource="${'Venkatamma' @resourceType='Demo/components/Venkatamma'}"></div>
