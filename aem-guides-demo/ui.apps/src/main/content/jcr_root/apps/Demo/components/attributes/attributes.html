@@ -1,0 +1,58 @@
+<h1>These are the custom attributes in AEM</h1>
+<h4>this is the data-sly-test</h4>
+<div data-sly-test="${properties.checkbox}">
+  <p>which is a similarly object creation, and which is used to create the object for the java code</p>
+</div>
+<h4>these are the movies using the data-sly-list</h4>
+<div data-sly-list.Ramesh="${properties.movies}">
+    <li>${Ramesh}</li>
+</div>
+<h4>these are the subjects using the data-sly-repeat</h4>
+<div data-sly-repeat.Arjuna="${properties.sub}">
+    <li>${Arjuna}</li>
+</div>
+
+<h4>this is the data-sly-resource</h4>
+
+<div data-sly-resource="${'custardApple' @resourceType='Demo/components/cusardApple'}">
+
+</div>
+
+<h4>This is the data-sly-include</h4>
+
+<div data-sly-include="jamun.html"></div><br>
+
+<h4>this is the data-sly-template</h4>
+
+<div data-sly-template.Iphone><br>
+
+   <div>template is used to pass the input values at template,
+   we can use the template in ways one is harding coding and another one is dynamic</div>
+   <h4>this is the data-sly-call</h4>
+   <div>the template doesn't by default exicute so we need to call the template with the help of the call</div>
+   <div>which is used to access/invoking the template</div>
+
+</div>
+
+<div data-sly-call="${Iphone}"></div>
+<h4>this is the data-sly-text</h4>
+<div data-sly-text="${properties.sub}">the text is used to replace the content of it's host element with specifiyed text</div>
+
+<h4>this is the data-sly-element</h4>
+
+<div data-sly-element="${properties.sub}">the elements are used to replace the element name of the host elements</div>
+
+<h4>this is the data-sly-unwrap</h4>
+
+<div data-sly-unwrap="${properties.sub}">the unwrap is used to remove the html elements for rendering</div>
+
+<h4>this is the data-sly-attribute</h4>
+
+<div title="Surge Software Solution" data-sly-attribute.title="${properties.movies}">the attribute is used to add the attribute to the host elements</div>
+
+
+
+
+
+
+
