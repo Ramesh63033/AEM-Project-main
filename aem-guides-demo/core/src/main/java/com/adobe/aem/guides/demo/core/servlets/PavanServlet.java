@@ -10,12 +10,16 @@ import javax.servlet.ServletException;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
-import org.apache.sling.servlets.annotations.SlingServletPaths;
+import org.apache.sling.servlets.annotations.SlingServletResourceTypes;
 import org.osgi.service.component.annotations.Component;
 
 
 @Component(service = Servlet.class, enabled = true, immediate = true)
-@SlingServletPaths(value = "/bin/chrome/pavankalyan/biograph")
+@SlingServletResourceTypes(
+    resourceTypes = "demo/components/page", // Replace with your actual resource type
+    methods = "GET",
+    extensions = "txt"
+)
 public class PavanServlet extends SlingSafeMethodsServlet{
         
           @Override
